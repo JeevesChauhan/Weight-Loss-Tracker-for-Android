@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeightActivity">
+
+    <RelativeLayout
+        android:id="@+id/weight_div1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add to Log"/>
+
+        <EditText
+            android:id="@+id/weight_kg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="kg"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/weight_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight_kg"
+            android:layout_centerHorizontal="true"
+            android:text="ADD"
+            android:background="@drawable/button"
+            android:textColor="@android:color/background_light"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_div2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="270dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Remove from log"/>
+
+        <EditText
+            android:id="@+id/weight_id"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Id"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/weight_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight_id"
+            android:layout_centerHorizontal="true"
+            android:text="Remove"
+            android:background="@drawable/button"
+            android:textColor="@android:color/background_light"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/weight_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back"
+        android:background="@drawable/button"
+        android:textColor="@android:color/background_light"/>
+
+
+
+
+
+</RelativeLayout>

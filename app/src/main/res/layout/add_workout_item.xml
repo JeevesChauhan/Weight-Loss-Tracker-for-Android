@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#f4f4f4">
+
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+            <TextView
+                android:id="@+id/item_workout_name"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Name of workout"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/td"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:text="Sets"/>
+                        <TextView
+                            android:id="@+id/item_workout_sets"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_below="@+id/td"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="NUMBER"/>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/rect"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"/>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/td1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:text="Reps"/>
+                        <TextView
+                            android:id="@+id/item_workout_reps"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_below="@+id/td1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="NUMBER"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

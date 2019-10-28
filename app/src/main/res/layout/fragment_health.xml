@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting Weight: "/>
+            <TextView
+                android:id="@+id/health_starting_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Values "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="LOST"
+            android:alpha="0.2"
+            android:textSize="140sp" />
+
+        <TextView
+            android:id="@+id/health_num_diff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:textSize="150sp"
+            android:layout_below="@id/topText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/health_num_diff"
+            android:layout_above="@id/botText"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="kg"/>
+
+        <LinearLayout
+            android:id="@+id/botText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/health_num_diff"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Weight: "/>
+            <TextView
+                android:id="@+id/health_current_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Values "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp">
+
+        <Button
+            android:id="@+id/health_weight"
+            android:layout_width="150dp"
+            android:textColor="@android:color/background_light"
+            android:layout_height="wrap_content"
+            android:text="Update Weight"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/health_log"
+            android:layout_below="@id/health_weight"
+            android:layout_width="150dp"
+            android:textColor="@android:color/background_light"
+            android:layout_height="wrap_content"
+            android:text="View log"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
