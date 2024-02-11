@@ -1,4 +1,4 @@
-> [!INFO]
+> [!NOTE]
 > University Project 2018/2019. The goal was to create an appliation for android, the language used was Java
 
 # Weight-Loss-Tracker-for-Android
