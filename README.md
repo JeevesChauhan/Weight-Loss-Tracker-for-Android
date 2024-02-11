@@ -1,4 +1,5 @@
 # Weight-Loss-Tracker-for-Android
+University Project 2018
 
 This application allows the user to track:
   - Food intake
